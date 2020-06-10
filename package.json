@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start:main": "cd main && npm run serve",
-	"start:micro": "cd micro-vue && npm run serve",
-	"startAll": "npm-run-all --parallel start:*"
+	  "start:micro": "cd micro-vue && npm run serve",
+    "startAll": "npm-run-all --parallel start:*",
+    "install:main": "cd main && yarn",
+    "install:micro": "cd micro-vue && yarn",
+    "installAll": "npm-run-all --serial install:*"
   },
   "keywords": [],
   "author": "",
